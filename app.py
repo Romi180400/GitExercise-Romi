@@ -1,8 +1,3 @@
-romi omer <romiomer145@gmail.com‏>
-	
-23:10 ‎(לפני 0 דקות)‎
-	
-אני
 from flask import Flask, send_file, request
 
 app = Flask(__name__)
