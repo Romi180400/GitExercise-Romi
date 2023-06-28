@@ -1,6 +1,6 @@
 from flask import Flask, send_file, request
 
-app = Flask(__name__)
+app = Flask(name)
 
 
 @app.route("/")
@@ -20,7 +20,7 @@ def blog():
 
 @app.route("/pricing")
 def pricing():
-    return "Our pricing for web development starts at $70 per hour."
+    return "Our pricing for web development starts at $55 per hour."
 
 
 @app.route("/contact")
@@ -38,7 +38,6 @@ def services():
     return "We offer the following services: web development, data analysis, SEO."
 
 
-if __name__ == "__main__":
+if name == "main":
     app.run(debug=True, port=8081, host="0.0.0.0")
-
 
